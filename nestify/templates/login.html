@@ -1,0 +1,32 @@
+<!-- templates/login.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+&nbsp;&nbsp;
+<h1 class="form-title">Login</h1>
+    <div class="login-form-container">
+        <div class="login-register-form">
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                {% if messages %}
+                    <div class="alert alert-info" role="alert">
+                            {% for message in messages %}
+                                {% if message.tags == 'info' %}
+                                    <strong><li id="msg" style="text-align:center;">{{ message }}</li></strong>
+                                {% endif %}
+                            {% endfor %}
+                    </div>
+                {% endif %}
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="userpassword" placeholder="Password" />
+                <div class="button-box">
+
+                    <button type="submit" class="btn-auth"><span>Login</span></button>
+                    <p>Don't have an account? &nbsp;<a href="{% url 'signup' %}">Signup</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}
