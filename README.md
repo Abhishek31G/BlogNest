@@ -18,6 +18,7 @@ Before setting up the project, ensure the following dependencies are installed:
 - Django 5.1.3
 - A virtual environment tool (e.g., `venv` or `virtualenv`)
 - pip (Python package manager)
+- - **Stable Internet Connection**: Required for dependencies and external libraries used in the project.
 
 ---
 
