@@ -25,10 +25,11 @@ Before setting up the project, ensure the following dependencies are installed:
 ## Setup Instructions
 
 1. **Clone the Repository**  
-   Clone this repository to your local machine:
+   Clone this repository to your local machine and switch to the `master` branch:
    ```bash
    git clone https://github.com/your-username/BlogNest.git
    cd BlogNest
+   git checkout master
    ```
    
 2. **Set Up a Virtual Environment**
@@ -69,18 +70,18 @@ python manage.py runserver
  ii)  To access the admin panel, go to http://127.0.0.1:8000/admin.
 
 
-***Application Functionality***
-  i) **Homepage**: Displays all published blog posts with their images, titles, and excerpts.
+**Application Functionality**
+  i) ***Homepage***: Displays all published blog posts with their images, titles, and excerpts.
   
-  ii) **Post Detail**: View the full content of a specific blog post.
+  ii) ***Post Detail***: View the full content of a specific blog post.
   
-  iii) **Create/Edit Posts**: Authenticated users can add or modify blog posts with title, content, and an optional image.
+  iii) ***Create/Edit Posts***: Authenticated users can add or modify blog posts with title, content, and an optional image.
   
-  iv) **Delete Posts**: Users can delete their posts.
+  iv) ***Delete Posts***: Users can delete their posts.
   
-  v) **User Authentication**: Secure login/logout system with signup functionality.
+  v) ***User Authentication***: Secure login/logout system with signup functionality.
 
-***Additional Notes***
+**Additional Notes**
     i) Static Files: Ensure the STATIC_ROOT is configured properly in the deployment settings.
     ii) Media Files: Uploaded images are stored in the MEDIA_ROOT directory. Ensure the appropriate configuration for serving media files in production.
 
