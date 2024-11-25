@@ -47,7 +47,9 @@
       {% if user.is_authenticated %}
       <ul class="navbar-nav ms-auto"> 
           <li class="nav-item">
-              <a class="nav-link" style="margin-right: 10px;"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;{{ user }}</a>
+              <a class="nav-link" style="margin-right: 10px;"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;
+                {{ user|title }}
+              </a>
           </li>
       </ul>
       {% endif %}

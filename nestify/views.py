@@ -57,7 +57,7 @@ def handleLogout(request):
     logout(request)
     return redirect('login')
 
-
+@login_required(login_url='/login/')
 def home(request):
     posts = BlogPost.objects.all().order_by('-created_at')
     return render(request, 'home.html', {"posts": posts})
