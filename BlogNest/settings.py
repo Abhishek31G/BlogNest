@@ -141,7 +141,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Django Session Timeout
 
 AUTO_LOGOUT = {
-    'IDLE_TIME': 10,    # logout after 10 secs of downtime
+    'IDLE_TIME': 300,    # logout after 5 mins of downtime
     'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
     'MESSAGE': 'The session has expired. Please login again to continue.',
     }  
